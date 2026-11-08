@@ -1,0 +1,18 @@
+# OS metadata
+.DS_Store
+._*
+Thumbs.db
+
+# Local documents and browser test data
+*.pdf
+/.brave-profile/
+/test-downloads/
+
+# Local configuration and extension signing keys
+.env
+.env.*
+*.pem
+
+# Generated extension packages
+*.crx
+*.zip

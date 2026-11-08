@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "PdfCraft for Brave",
+  "version": "1.0.0",
+  "description": "Open full-tab PDFs with the locally bundled PdfCraft WebAssembly viewer.",
+  "minimum_chrome_version": "151",
+  "mime_types_handler": {
+    "application/pdf": {
+      "handler_url": "viewer.html",
+      "can_embed": false
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "permissions": ["downloads"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'none'; connect-src 'self';"
+  }
+}
